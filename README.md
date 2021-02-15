@@ -1,9 +1,9 @@
 # pngs
 
-[![Tags](https://img.shields.io/github/release/denosaurs/images)](https://github.com/denosaurs/images/releases)
-[![CI Status](https://img.shields.io/github/workflow/status/denosaurs/images/check)](https://github.com/denosaurs/images/actions)
-[![Dependencies](https://img.shields.io/github/workflow/status/denosaurs/images/depsbot?label=dependencies)](https://github.com/denosaurs/depsbot)
-[![License](https://img.shields.io/github/license/denosaurs/images)](https://github.com/denosaurs/images/blob/master/LICENSE)
+[![Tags](https://img.shields.io/github/release/denosaurs/pngs)](https://github.com/denosaurs/pngs/releases)
+[![CI Status](https://img.shields.io/github/workflow/status/denosaurs/pngs/check)](https://github.com/denosaurs/pngs/actions)
+[![Dependencies](https://img.shields.io/github/workflow/status/denosaurs/pngs/depsbot?label=dependencies)](https://github.com/denosaurs/depsbot)
+[![License](https://img.shields.io/github/license/denosaurs/pngs)](https://github.com/denosaurs/pngs/blob/master/LICENSE)
 
 A simple wasm png encoder/decoder module for deno
 
