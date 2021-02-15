@@ -1,0 +1,23 @@
+[package]
+name = "pngs"
+description = "A simple wasm png encoder/decoder module for deno"
+repository = "https://github.com/denosaurs/images"
+license = "MIT"
+version = "0.1.0"
+authors = ["Elias Sjögreen"]
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.70"
+png = "0.16.8"
+
+[profile.release]
+lto = true
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-Oz", "--enable-mutable-globals"]
+
