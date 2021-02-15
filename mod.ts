@@ -1,4 +1,4 @@
-import init, { encode as wasmEncode, source } from "./wasm.js";
+import init, { encode as wasmEncode, decode as wasmDecode, source } from "./wasm.js";
 
 await init(source);
 
@@ -36,6 +36,15 @@ export const FilterType = {
   Paeth: 4,
 };
 
+export interface DecodeResult {
+  image: Uint8Array,
+  width: number,
+  height: number,
+  colorType: ValueOf<typeof ColorType>,
+  bitDepth: ValueOf<typeof BitDepth>,
+  lineSize: number
+} 
+
 export function encode(
   image: Uint8Array,
   width: number,
@@ -60,4 +69,17 @@ export function encode(
     options?.compression,
     options?.filter,
   );
+}
+
+export function decode(image: Uint8Array): DecodeResult {
+  const res = wasmDecode(image);
+  
+  return {
+    image: new Uint8Array(res.image),
+    width: res.width,
+    height: res.height,
+    colorType: res.colorType,
+    bitDepth: res.bitDepth,
+    lineSize: res.lineSize,
+  };
 }
