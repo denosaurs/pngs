@@ -60,8 +60,13 @@ export function encode(
     depth?: ValueOf<typeof BitDepth>;
     compression?: ValueOf<typeof Compression>;
     filter?: ValueOf<typeof FilterType>;
+    stripAlpha?: boolean
   },
 ): Uint8Array {
+  if (options?.stripAlpha) {
+    image = image.filter((_, i) => (i + 1) % 4);
+  }
+  
   return wasmEncode(
     image,
     width,
