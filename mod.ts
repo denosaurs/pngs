@@ -37,9 +37,9 @@ export const FilterType = {
 };
 
 export function encode(
+  image: Uint8Array,
   width: number,
   height: number,
-  image: Uint8Array,
   options?: {
     palette?: Uint8Array;
     trns?: Uint8Array;
@@ -48,15 +48,15 @@ export function encode(
     compression?: ValueOf<typeof Compression>;
     filter?: ValueOf<typeof FilterType>;
   },
-): number {
+): Uint8Array {
   return wasmEncode(
+    image,
     width,
     height,
-    image,
     options?.palette,
     options?.trns,
-    options?.color,
-    options?.depth,
+    options?.color ?? ColorType.RGBA,
+    options?.depth ?? BitDepth.Eight,
     options?.compression,
     options?.filter,
   );

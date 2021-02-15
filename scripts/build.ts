@@ -16,6 +16,7 @@ export async function build() {
   await run(
     "building rust",
     ["wasm-pack", "build", "--target", "web", "--release"],
+    true,
   );
 
   const wasm = await Deno.readFile(`pkg/${name}_bg.wasm`);
