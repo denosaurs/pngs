@@ -4,7 +4,7 @@ import { requires, run } from "./_util.ts";
 export async function clean() {
   await requires("cargo");
   await run("cleaning cargo build", ["cargo", "clean"]);
-  if (exists("pkg")) {
+  if (await exists("pkg")) {
     console.log("removing pkg");
     await Deno.remove("pkg", { recursive: true });
   }

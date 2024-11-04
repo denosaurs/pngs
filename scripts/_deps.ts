@@ -1,4 +1,4 @@
-export { encode } from "https://deno.land/std@0.87.0/encoding/base64.ts";
-export { exists } from "https://deno.land/std@0.87.0/fs/mod.ts";
-export { compress } from "https://deno.land/x/lz4@v0.1.2/mod.ts";
-export { minify } from "https://jspm.dev/terser@5.5.1";
+export { encodeBase64 } from "jsr:@std/encoding@1.0.5/base64";
+export { exists } from "jsr:@std/fs@1.0.5/exists";
+export { compress } from "jsr:@denosaurs/lz4@0.1.4";
+export { minify } from "npm:terser@5.5.1";

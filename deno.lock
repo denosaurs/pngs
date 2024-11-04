@@ -1,0 +1,84 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@denosaurs/lz4@0.1.4": "0.1.4",
+    "jsr:@std/encoding@1.0.5": "1.0.5",
+    "jsr:@std/fs@1.0.5": "1.0.5",
+    "npm:terser@5.5.1": "5.5.1"
+  },
+  "jsr": {
+    "@denosaurs/lz4@0.1.4": {
+      "integrity": "ad5d556c02eb01fe1e0f2e953d7be066a14870afe149b1aed1ced019460f6aa1"
+    },
+    "@std/encoding@1.0.5": {
+      "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
+    },
+    "@std/fs@1.0.5": {
+      "integrity": "41806ad6823d0b5f275f9849a2640d87e4ef67c51ee1b8fb02426f55e02fd44e"
+    }
+  },
+  "npm": {
+    "buffer-from@1.1.2": {
+      "integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ=="
+    },
+    "commander@2.20.3": {
+      "integrity": "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ=="
+    },
+    "source-map-support@0.5.21": {
+      "integrity": "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==",
+      "dependencies": [
+        "buffer-from",
+        "source-map@0.6.1"
+      ]
+    },
+    "source-map@0.6.1": {
+      "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="
+    },
+    "source-map@0.7.4": {
+      "integrity": "sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA=="
+    },
+    "terser@5.5.1": {
+      "integrity": "sha512-6VGWZNVP2KTUcltUQJ25TtNjx/XgdDsBDKGt8nN0MpydU36LmbPPcMBd2kmtZNNGVVDLg44k7GKeHHj+4zPIBQ==",
+      "dependencies": [
+        "commander",
+        "source-map@0.7.4",
+        "source-map-support"
+      ]
+    }
+  },
+  "remote": {
+    "https://deno.land/x/lz4@v0.1.2/mod.ts": "4decfc1a3569d03fd1813bd39128b71c8f082850fe98ecfdde20025772916582",
+    "https://deno.land/x/lz4@v0.1.2/wasm.js": "b9c65605327ba273f0c76a6dc596ec534d4cda0f0225d7a94ebc606782319e46",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/0545670c.js": "468e254a0e5f7801333f217fcee046141186bd0a960018c893d73910bd754b71",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/3fe460d2.js": "991599d7a4ccc93f3dc0808aa706e713fd80a80fc8d21ec1fd28a96832030572",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/57403c48.js": "3fa9c20fb03311a58a652563a4c935f6e7666113d2f725a6458893bfbac75e5f",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/633ae550.js": "65a4b416c1a22251ee020c55496de44a08ae247d4108898dfc0f4753df829fc5",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/8dc3f476.js": "55ff556fbd358ec01e78b1bc31d4d22baf1479046e42ea17f712b58ea96ba535",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/8ddf35de.js": "c05f3a1431f18571f87b59b7d3cda65c8983712c9b424b5574623975dcc68863",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/a17f45f2.js": "a36e172b43861a826c2258b8735525a1b13eb59c198ee808b016586d02dab38f",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/a421dfba.js": "ec016925d8e0ec5e5b56c0847212c1113edce320f5f6920d241ee00ee115d172",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/c5b352d6.js": "991006a876c2c17414e1884022c7c96a5cbe9a4fc9ec1abd717ac3d0ee7d4c55",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/cb95b980.js": "e20e42c770070c4326cb18192218b59e90a5378cdc57897f0c5f3b99ae054f07",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/_/e0803811.js": "1f6fe590fd0eeb59d9911633c388a4d97bea171f10ad260bc63b6702eb6d2e25",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/assert": "d10535eedc33c732428f71cd82f4a0caf0e74fec90d6bd7c3535a8ea4389a5ce",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/buffer": "f6bd0a893f7d7d48422389dc81a2923809fbd24c2d6352c7f4bdd29dcad7154b",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/events": "e5cc37092fddd5ac75814ca2a779eda7977ef43b0b410d90c8f9323f89d80cb4",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/fs": "721ba251d28f561ab8b04b57938cba82b702b821bdf027b0f0c00bd7f94d3cdd",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/path": "3eefa6fbe73189ade0710d6dc4c725be27f0496cb5371d59c0a16b84be17e0cb",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/stream": "bbc5a30284349f7be148a0a9e81fbdf30d52abaf9b155554abce757bdffac50a",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/url": "3d7ca846b3826a38b6b6596e04446f053bcadb71b818a28333e620afd119fef7",
+    "https://jspm.dev/npm:@jspm/core@2.0.1/nodelibs/util": "f22fa23c828774618e6f8705ce6705f5a4e1d939efc98af445805d6d9a9e4a44",
+    "https://jspm.dev/npm:@jspm/core@2/nodelibs/fs": "9281dd30f0fbcfc282a5c235d54ed502166d109171380db7a609480e10e9627b",
+    "https://jspm.dev/npm:@jspm/core@2/nodelibs/path": "5216638da3b96090d01ef829eeb4b271c3da699e8db06655ef6452315999bd76",
+    "https://jspm.dev/npm:source-map@0.7": "b1457020fd65a74ab4aeb972daf602ba981a0f380365ea00dfe0406a36ff685c",
+    "https://jspm.dev/npm:source-map@0.7.4!cjs": "fcf7b4aff604c36c36cb1b91673648125cfaf32e1f3d36b0ee389eeaf1530c5f",
+    "https://jspm.dev/npm:source-map@0.7.4/_/a8324845.js": "a0ceca99d77c1ee0d5d31d5b81d955b042f2dfd103c69201173907de787ad2cc",
+    "https://jspm.dev/npm:source-map@0.7.4/lib/array-set!cjs": "3bf250fc1cbe4a5ec7a4f9439e03988a75e66478a0aa77d9904086a89dd8ca49",
+    "https://jspm.dev/npm:source-map@0.7.4/lib/binary-search!cjs": "f183e8f9385fc034a88779c281042ecda9b328e5c4639ac4452ba715cde1bad3",
+    "https://jspm.dev/npm:source-map@0.7.4/lib/source-map-consumer!cjs": "34c8c1344c04378253f1ffd58bcc54bda3d6acda4ef558bcb19d0de0ba5b97c4",
+    "https://jspm.dev/npm:source-map@0.7.4/lib/source-map-generator!cjs": "1ef6efd9c675b3d65a945018bb35d53f9d3c9c1d2dd0686ac96f1c37c658269e",
+    "https://jspm.dev/npm:source-map@0.7.4/lib/util!cjs": "1d3365e450928e66aab33f67b17fb4eccf9a563027c4d4ce65e856aae7e5128d",
+    "https://jspm.dev/npm:terser@5.5.1": "fe6c228667f088396ef18b4cdfd8c8a2f772ab0e0496e706068e138772b37d81",
+    "https://jspm.dev/terser@5.5.1": "503e8061b3e446c7a197354f199aa15d6d1ca8c549d4a89a59ce2716750bf2d1"
+  }
+}

@@ -12,13 +12,13 @@ jobs:
       - name: Setup latest deno version
         uses: denolib/setup-deno@v2
         with:
-          deno-version: v1.x
+          deno-version: v2.x
 
       - name: Run deno fmt
         run: deno fmt --check --ignore=wasm.js
 
       - name: Run deno lint
-        run: deno lint --unstable --ignore=wasm.js
+        run: deno lint --ignore=wasm.js
 
   test:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
       - name: Setup latest deno version
         uses: denolib/setup-deno@v2
         with:
-          deno-version: v1.x
+          deno-version: v2.x
 
       - name: Run deno test
         run: deno test --allow-none

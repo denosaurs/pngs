@@ -50,4 +50,4 @@ Pull request, issues and feedback are very welcome. Code style is formatted with
 
 ### Licence
 
-Copyright 2021, Denosaurs. All rights reserved. MIT license.
+Copyright 2024, Denosaurs. All rights reserved. MIT license.

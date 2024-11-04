@@ -6,7 +6,6 @@ export async function lint() {
     "linting typescript",
     [
       "deno",
-      "--unstable",
       "lint",
       "scripts",
       "test_deps.ts",

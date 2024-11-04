@@ -6,7 +6,6 @@ export async function fmt() {
     "formatting typescript",
     [
       "deno",
-      "--unstable",
       "fmt",
       "scripts/",
       "test_deps.ts",

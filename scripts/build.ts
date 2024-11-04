@@ -1,5 +1,5 @@
 import { requires, run } from "./_util.ts";
-import { compress, encode, minify } from "./_deps.ts";
+import { compress, encodeBase64, minify } from "./_deps.ts";
 
 const name = "pngs";
 const target = "wasm.js";
@@ -23,19 +23,23 @@ export async function build() {
   console.log(`read wasm                      (size: ${wasm.length} bytes)`);
   const compressed = compress(wasm);
   console.log(
-    `compressed wasm using lz4      (reduction: ${wasm.length -
-      compressed.length} bytes, size: ${compressed.length} bytes)`,
+    `compressed wasm using lz4      (reduction: ${
+      wasm.length -
+      compressed.length
+    } bytes, size: ${compressed.length} bytes)`,
   );
-  const encoded = encode(compressed);
+  const encoded = encodeBase64(compressed);
   console.log(
-    `encoded wasm using base64      (increase: ${encoded.length -
-      compressed.length} bytes, size: ${encoded.length} bytes)`,
+    `encoded wasm using base64      (increase: ${
+      encoded.length -
+      compressed.length
+    } bytes, size: ${encoded.length} bytes)`,
   );
 
   const init = await Deno.readTextFile(`pkg/${name}.js`);
   console.log(`read js                        (size: ${init.length} bytes)`);
 
-  const source = `import * as lz4 from "https://deno.land/x/lz4@v0.1.2/mod.ts";
+  const source = `import * as lz4 from "jsr:@denosaurs/lz4@0.1.4";
                 export const source = lz4.decompress(Uint8Array.from(atob("${encoded}"), c => c.charCodeAt(0)));
                 ${init}`;
   console.log(`inlined js and wasm            (size: ${source.length} bytes)`);
@@ -48,9 +52,11 @@ export async function build() {
   });
 
   const reduction = new Blob([source]).size -
-    new Blob([output.code]).size;
+    new Blob([output.code!]).size;
   console.log(
-    `minified js                    (size reduction: ${reduction} bytes, size: ${output.code.length} bytes)`,
+    `minified js                    (size reduction: ${reduction} bytes, size: ${
+      output.code!.length
+    } bytes)`,
   );
 
   console.log(`writing output to file         (${target})`);

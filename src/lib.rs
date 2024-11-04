@@ -66,8 +66,8 @@ pub fn encode(
 }
 
 #[wasm_bindgen]
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
 pub struct DecodeResult {
   image: Vec<u8>,
   width: u32,
@@ -91,7 +91,7 @@ pub fn decode(image: &[u8]) -> Result<JsValue, JsValue> {
     return Err(JsValue::from_str(&format!("{}", err)));
   }
 
-  let res = match JsValue::from_serde(&DecodeResult {
+  let res = match serde_wasm_bindgen::to_value(&DecodeResult {
     image,
     width: info.width,
     height: info.height,
