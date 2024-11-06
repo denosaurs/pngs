@@ -10,15 +10,14 @@
   },
   "lint": {
     "exclude": [
+      "wasm.js",
       "pkg"
     ]
   },
   "publish": {
     "include": [
       "mod.ts",
-      "wasm.js",
-      "README.md",
-      "LICENSE"
+      "wasm.js"
     ]
   }
 }
