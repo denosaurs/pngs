@@ -138,7 +138,7 @@ export interface DecodeResult {
 
 /**
  * Encodes an image to PNG format.
- * 
+ *
  * @example
  * ```ts
  * // An array containing a RGBA sequence where the first pixel is red and second is black
@@ -214,7 +214,7 @@ export function encode(
 
 /**
  * Decodes a PNG image.
- * 
+ *
  * @example
  * ```ts
  * const image = await Deno.readFile("image.png");
