@@ -1,0 +1,10 @@
+{
+  "name": "@denosaurs/gmath",
+  "version": "0.2.0",
+  "exports": {
+    ".": "./mod.ts"
+  },
+  "tasks": {
+    "wasmbuild": "deno run -A jsr:@deno/wasmbuild@0.19"
+  }
+}

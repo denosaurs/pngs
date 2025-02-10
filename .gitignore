@@ -2,3 +2,4 @@
 target/
 # wasm-pack
 pkg/
+/target
